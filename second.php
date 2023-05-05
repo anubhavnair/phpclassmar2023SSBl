@@ -8,12 +8,17 @@
      $b = $_REQUEST["t2"];
      $c = $_REQUEST["t3"];
 
-     for($i=$a;$i<=$b;$i++)
+     $i=$a;
+     do 
      {
-       if($i % $c==0)
-        print($i." ");
-
+        echo($i*$c." ");
+          if($i==25)
+            {
+               break;
+            }
+        $i++;
      }
+     while($i<=$b);
 
 
 
