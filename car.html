@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<style>
+#mycar
+{
+  position:absolute;
+  left:100px;
+  top:100px;	
+}
+</style>
+<script>
+function fun()
+{
+//  document.location.href="mytimer.html";	
+
+//   document.location.replace("mytimer.html");
+//  document.write("<h1>Piyush</h1>");
+
+  var t=document.createElement("input");
+  t.type="text";
+  t.size="50";
+  t.name="t1"
+  
+  var myBody=document.getElementsByTagName("body");
+   myBody.item(0).appendChild(t);
+}
+function fun1()
+{
+  var win=window.open("mytimer.html","chatbox","width=200,height=200,left=400,top=150");	
+  // win.print(); 
+  window.print(); 
+}
+</script>
+<script src="car.js"></script>
+</head>
+<body onLoad="gamestart();">
+<input type="button" value="Sensible" onClick="fun();">
+
+<input type="button" value="Start Chat" onClick="fun1();">
+
+
+<input type="text" autofocus onKeyUp="setDirection();" />
+
+<img id="mycar" src="car1.png" width="50" height="40"  />
+
+
+</body>
+</html>
