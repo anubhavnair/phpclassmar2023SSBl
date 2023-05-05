@@ -8,26 +8,12 @@
      $b = $_REQUEST["t2"];
      $c = $_REQUEST["t3"];
 
-    if($a>$b)
-    {
-        if($a>$c)
-         {
-            print("$a is greater");
-         }
-         else 
-         {
-            echo("$c is greater");
-         }
-
-    }
-    else 
-    {
-       if($b>$c)
-         echo("$b is greater");
-       else 
-         echo("$c is greater");
-    }
-
+   if($a>$b && $a>$c)
+      print($a ." is greater ");
+  else if($b>$a && $b>$c)
+      print($b ." is greater ");
+  else if($c>$a && $c>$b)
+      print($c ." is greater ");
 
 
 
