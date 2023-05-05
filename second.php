@@ -8,20 +8,23 @@
      $b = $_REQUEST["t2"];
      $c = $_REQUEST["t3"];
 
-     $i=$a;
-     do 
+ 
+function show()   //Non Parametrized function definition
      {
-        echo($i*$c." ");
-          if($i==25)
-            {
-               break;
-            }
-        $i++;
+        print("<br>Hello");
+        print("<br>How are you");
+        print("<br>I am fine");
+        print("<br>What about you ?");
      }
-     while($i<=$b);
+  function add($x,$y)   // Parametrized function definition
+     {
+         $z=$x + $y;
+         print("<br>Addition is $z");
+     }
 
-
-
+  show();    //function calling
+      add(4,7);
+      add($a,$b);
     ?>
   
     </h1>
